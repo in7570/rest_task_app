@@ -2,7 +2,9 @@ import React from 'react'
 
 const EditModal = () => {
   return (
-    <div>EditModal</div>
+    <div>
+      
+    </div>
   )
 }
 

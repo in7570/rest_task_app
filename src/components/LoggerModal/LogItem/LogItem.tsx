@@ -1,7 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 const LogItem = () => {
-  return <div>LogItem</div>;
-};
+  return (
+    <div>
+      
+    </div>
+  )
+}
 
-export default LogItem;
+export default LogItem

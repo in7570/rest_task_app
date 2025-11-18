@@ -1,25 +1,6 @@
-import type { TypedUseSelectorHook } from 'react-redux';
-import { useDispatch, useSelector } from 'react-redux';
-import type { AppDispatch, RootState } from '../store';
+import type { AppDispatch, RootState } from "../store";
+import { useDispatch, useSelector } from "react-redux";
+import type { TypedUseSelectorHook } from "react-redux";
 
-const useTypedSelector: TypedUseSelectorHook<RootState> = useSelector;
-const useTypedDispatch = () => useDispatch<AppDispatch>();
-
-const logger = useSelector((state: RootState) => state.logger);
-
-interface Obj<T> {
-  name: T;
-}
-
-interface State {
-  state: { data: string; loading: boolean };
-}
-
-const obj: Obj<State> = {
-  name: {
-    state: {
-      data: 'abcd',
-      loading: false,
-    },
-  },
-};
+export const useTypedSelector: TypedUseSelectorHook<RootState> = useSelector
+export const useTypedDispatch = () => useDispatch<AppDispatch>();
